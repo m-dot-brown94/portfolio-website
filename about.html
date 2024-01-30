@@ -13,7 +13,7 @@
 <body>
     <header>
         <div class="container">
-            <img src="img/logo.svg" alt="My Logo">
+            <img class="logo" src="img/logo.svg" alt="My Logo">
             <nav>
                 <ul class="navigation">
                     <li><a href="index.html">Work</a></li>
@@ -24,17 +24,17 @@
         </div>
     </header>
     <main>
-        <div>
-            <div>
+        <div id="hero">
+            <div class="container">
                 <h1>About</h1>
             </div>
             <div>
-                <picture>
+                <picture class="headshot">
                     <source srcset="img/headshots/headshot@1x.png" media="(max-width:767px)">
                     <img src="img/headshots/headshot@2x.png" alt="Profile Picture">
                 </picture>
-                <div>
-                    <div>
+                <div id="work">
+                    <div class="container">
                         <h2>My Story</h2>
                         <p>I am transitioning to UX/UI design with a background in technical support & customer service. In my line of work, I have had to think outside of the box to find solutions to various user issues and meet business needs.</p>
                         <p>During my college years, I was introduced to design when I worked as an IT Support Technician. I worked alongside our in-house graphic designer and web developer to create our IT support webpage.</p>
@@ -61,18 +61,17 @@
                             </div>
                         </div>
                     </div>
+                    <a href="#" class="button">View Resume</a>
                 </div>
             </div>
         </div>
-        <a href="#" class="button">View Resume</a>
     </main>
     <footer id="contact">
         <div class="container">
             <h2>Get in Touch</h2>
             <p>Do you like my work and want to discuss opportunities? Please get in touch. Call: <a href="tel:+17043884834">+1 704 388 4834</a>. Prefer sending an email?</p>
             <div>
-                <a href="mailto:mirandabrown785@gmail.com">Email me</a>
-            </div>
+                <a href="mailto:mirandabrown785@gmail.com" class="button contact">Email me</a>            </div>
             <div>
                 <!--Social Media Layout and Placeholders-->
                 <a href="LINKEDIN-URL" target="_blank">

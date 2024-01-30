@@ -40,13 +40,8 @@ h4 {
   font-weight: 400;
 }
 
-#my.heading {
-  text-align: center;
-  color: red;
-}
-
 a {
-    color: #1D2ABF;
+    color: #505CDF;
     text-decoration: none; /* No underlining */
   }
   a:visited { /* visited link */
@@ -90,9 +85,67 @@ a {
 
 /* Layout styling */
 
+header {
+  background-color: #505CDF;
+  padding: 10px;
+  text-align: center;
+  border: solid #BDBDBD 1px; 
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+	-webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+	-moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ;
+}
+
 .container {
   padding: 0 15px;
 }
+
 .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
+#work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
+#work {
+  margin: 0 25px;
+}
+
+#hero h1 {
+  text-align: center; /* Centers text */
+}
+
+.logo {
+  max-width: 250px;
+}
+.headshot {
+  margin: 25px 0;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+
+nav > ul > li > a:visited {
+  color: #1E2148; 
+}
+
+nav > ul > li > a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+nav > ul > li > a:active {
+  color: #505CDF;
+}
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
