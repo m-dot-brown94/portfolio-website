@@ -87,3 +87,9 @@ a {
     background-color: #1D2ABF;
     color: #ffffff;
   }
+
+/* Layout styling */
+
+.container {
+  padding: 0 15px;
+}
