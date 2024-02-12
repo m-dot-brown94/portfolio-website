@@ -47,16 +47,14 @@ a {
     color: #505CDF;
     text-decoration: none; /* No underlining */
   }
-  a:visited { /* visited link */
-    color: #1E2148;
-  }
+
   a:hover,
   a:focus {
-    color: #505CDF;
+    color: #ffffffae;
     text-decoration: underline; /* Underlining when hovering over a link */
   }
   a:active { /* selected link */
-    color: #505CDF;
+    color: #FFFFFF;
   }
   
   .button {
@@ -122,6 +120,10 @@ header {
   margin: 0 25px;
 }
 
+#contact{
+  margin: 0 25px;
+}
+
 .logo {
   max-width: 250px;
 }
@@ -140,20 +142,16 @@ nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #4a4a4a;
-}
-
-nav > ul > li > a:visited {
-  color: #1E2148; 
+  color: #FFFFFF;
 }
 
 nav > ul > li > a:hover {
-  color: #ffffff;
-  text-decoration: underline;
+  color: #ffffffa3;
+  text-decoration: none;
 }
 
 nav > ul > li > a:active {
-  color: #505CDF;
+  color: #FFFFFF;
 }
 nav {
   display: inline-block;
