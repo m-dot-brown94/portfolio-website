@@ -11,20 +11,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
     <link rel="icon" type="image/png" href="img/favicon.png">
+    <script src="https://kit.fontawesome.com/8fbaeb5317.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <div class="container">
-            <a href="index.html">
-                <img class="logo" src="img/logo.svg" alt="My Logo">
-            </a>            
-            <nav>
-                <ul class="navigation">
-                    <li><a href="index.html">Work</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+            <div class="navtoggle" id="myNavtoggle">
+                <a href="index.html">
+                    <img class="logo" src="img/logo.svg" alt="My Logo">
+                </a>            
+                <nav>
+                    <ul class="navigation">
+                        <li><a href="index.html">Work</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <main>
@@ -695,17 +699,11 @@
             <div class="row">
                 <a href="mailto:mirandabrown785@gmail.com" class="button contact">Email me</a>
             </div>
-            <div class="social">
-                <a href="LINKEDIN-URL" target="_blank">
-                    <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                        <defs><style>.cls-1{fill:#007fb5;}.cls-2{fill:#fff;}</style></defs><title/><g data-name="14-linkedin" id="_14-linkedin"><rect class="cls-1" height="64" rx="11.2" ry="11.2" width="64"/><rect class="cls-2" height="32.72" width="9.03" x="8.99" y="23.54"/>
-                        <path class="cls-2" d="M48.2,23.54C41.54,21,36.72,25.3,34.66,27.7V23.54h-9V56.26h9V39a8.45,8.45,0,0,1,2.23-5.92,4.75,4.75,0,0,1,3.41-1.67A5.42,5.42,0,0,1,44.24,33a6.13,6.13,0,0,1,1.7,4.35V56.26H56.1V36S57.23,26.92,48.2,23.54Z"/><circle class="cls-2" cx="13.5" cy="13.38" r="5.64"/></g>
-                    </svg>
-                </a>
-            </div>
+            <i class="fa-brands fa-linkedin"></i>
                 <p>Copyright MIRANDA-BROWN 2024</p>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
 </body>
 </html>

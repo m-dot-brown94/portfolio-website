@@ -88,14 +88,37 @@ a {
 
 header {
   background-color: #505CDF;
-  padding: 10px;
-  text-align: center;
+  padding: 10px 0 4px;
   border: solid #BDBDBD 1px; 
 	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
 	-webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
 	-moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ;
 }
 
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+.navtoggle li .icon {
+  position: absolute;
+  padding-right: 0;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
 .container {
   padding: 0 15px;
 }
@@ -125,7 +148,7 @@ header {
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 150px;
 }
 .headshot {
   margin: 25px 0;
@@ -134,10 +157,9 @@ header {
 nav > ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
-nav > ul > li {
-  display: inline-block;
-}
+
 nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
@@ -153,10 +175,6 @@ nav > ul > li > a:hover {
 nav > ul > li > a:active {
   color: #FFFFFF;
 }
-nav {
-  display: inline-block;
-  width: 100%;
-}
 
 .headshot {
   max-width: 350px;
@@ -165,21 +183,28 @@ nav {
   margin-right: auto;
 }
 
-.social {
-  max-width: 50px;
-  display: block;
-}
-
 .skills{
   text-align: left;
 }
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 641px) {
   header {
     text-align: unset;
     padding: 20px 0 13px;
+  }
+  nav > ul > li {
+    display: inline-block;
+  }
+  nav > ul {
+    margin: 1em 0;
+  }
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+  .navtoggle li:last-child {
+    display: none;
   }
   nav {
     width: auto;
@@ -269,6 +294,9 @@ X-large devices (1440px or larger)
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+  }
+  .logo {
+    min-width: 641px;
   }
 }
 
