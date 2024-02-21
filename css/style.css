@@ -101,9 +101,7 @@ header {
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
-.navtoggle li:not(:last-child) {
-  display: none;
-}
+
 .navtoggle li .icon {
   position: absolute;
   padding-right: 0;
