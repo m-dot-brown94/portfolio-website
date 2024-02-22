@@ -101,7 +101,7 @@ header {
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
-.navtoggle li:last-child {
+.navtoggle li:not(:last-child) {
   display: none;
 }
 .navtoggle li .icon {
@@ -111,6 +111,7 @@ header {
   top: 2px;
   font-size: 20px;
 }
+
 .navtoggle.responsive li  {
   display: block;
   padding: 10px 0;
@@ -200,10 +201,11 @@ Medium devices (640px and larger)
   nav > ul {
     margin: 1em 0;
   }
+ 
   .navtoggle li:not(:last-child) {
     display: inline-block;
   }
-  .navtoggle li:last-child {
+  .navtoggle li:last-child{
     display: none;
   }
   nav {
